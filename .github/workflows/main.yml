@@ -27,7 +27,13 @@ jobs:
         set PATH=%PATH%;%GITHUB_WORKSPACE%\Qt\5.12.12\msvc2017_64\bin
         cmd.exe /c build-libffi.bat
         cmd.exe /c build-ultimate-x64.bat
-
+        
+    - name: Upload artifact64
+      uses: actions/upload-artifact@v1
+      with:
+          name: vmp64
+          path: bin
+          
     - name: build x86
       shell: cmd
       run: |
@@ -36,8 +42,8 @@ jobs:
         cmd.exe /c build-libffi.bat
         cmd.exe /c build-ultimate-x86.bat
  
-    - name: Upload artifact
+    - name: Upload artifact32
       uses: actions/upload-artifact@v1
       with:
-          name: vmp
+          name: vmp32
           path: bin
