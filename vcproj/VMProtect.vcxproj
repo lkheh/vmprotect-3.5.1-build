@@ -65,9 +65,14 @@
     <ClCompile Include="..\VMProtect\main.cc" />
     <ClCompile Include="..\VMProtect\mainwindow.cc">
       <DeploymentContent>false</DeploymentContent>
+      <AssemblerOutput>All</AssemblerOutput>
     </ClCompile>
-    <ClCompile Include="..\VMProtect\message_dialog.cc" />
-    <ClCompile Include="..\VMProtect\models.cc" />
+    <ClCompile Include="..\VMProtect\message_dialog.cc">
+      <AssemblerOutput>All</AssemblerOutput>
+      </ClCompile>
+    <ClCompile Include="..\VMProtect\models.cc">
+      <AssemblerOutput>All</AssemblerOutput>
+      </ClCompile>
     <ClCompile Include="..\VMProtect\precompiled.cc">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Professional|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Professional|x64'">Create</PrecompiledHeader>
@@ -1478,6 +1483,7 @@
       <PreprocessorDefinitions>_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AssemblerOutput>All</AssemblerOutput>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -1507,6 +1513,7 @@
       <PreprocessorDefinitions>_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AssemblerOutput>All</AssemblerOutput>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -1535,6 +1542,7 @@
     <ClCompile>
       <PreprocessorDefinitions>_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AssemblerOutput>All</AssemblerOutput>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -1557,6 +1565,7 @@
     <ClCompile>
       <PreprocessorDefinitions>_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AssemblerOutput>All</AssemblerOutput>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -1648,6 +1657,9 @@
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Ultimate|Win32'">
+    <ClCompile>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
     <Link>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <IgnoreSpecificDefaultLibraries>
@@ -1666,6 +1678,9 @@
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Checked|Win32'">
+    <ClCompile>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
     <Link>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <IgnoreSpecificDefaultLibraries>
@@ -1684,6 +1699,9 @@
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Ultimate|x64'">
+    <ClCompile>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
     <Link>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <IgnoreSpecificDefaultLibraries>
@@ -1702,6 +1720,9 @@
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">
+    <ClCompile>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
     <Link>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <IgnoreSpecificDefaultLibraries>
