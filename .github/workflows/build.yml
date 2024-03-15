@@ -32,7 +32,7 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
           name: vmp64
-          path: vmprotect-3.5.1-build
+          path: tmp
           
     - name: build x86
       shell: cmd
@@ -46,4 +46,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
           name: vmp32
-          path: vmprotect-3.5.1-build
+          path: tmp
