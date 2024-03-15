@@ -87,6 +87,7 @@
       <HeaderFileName />
     </Midl>
     <ClCompile>
+      <AssemblerOutput>All</AssemblerOutput>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -167,6 +168,7 @@
       </HeaderFileName>
     </Midl>
     <ClCompile>
+      <AssemblerOutput>All</AssemblerOutput>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
